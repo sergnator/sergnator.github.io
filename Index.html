@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <title>AmazingAnimal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: minecraft;
+        }
+
+        @font-face {
+            font-family: minecraft;
+            src: url(Monocraft.otf);
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: url(site_fone.png);
+            color: white;
+        }
+
+            .header h1 {
+                font-size: 40px;
+            }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px 20px;
+                text-decoration: none;
+            }
+
+                .navbar a.right {
+                    float: right;
+                }
+
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .navbar-right {
+            float: right;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            color: #5F9EA0;
+            text-shadow: 1px 1px 1px black;
+            background-color: #303538;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            background-color: #101010;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 1px;
+            text-align: center;
+            background: #24292b;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #novost1 {
+            width: 300px;
+            height: 170px;
+            text-align: center;
+            padding: 15px;
+            border: 3px solid black;
+            border-radius: 10px;
+            color: black;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: #DCDCDC;
+        }
+
+            #novost1:target {
+                display: block;
+            }
+
+        .sliding-button {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            position: relative;
+            padding: 15px 30px;
+            border: 1px solid;
+            border-image: linear-gradient(180deg, #ff1800, #ff5000, #ff7200, #ff9f00);
+            border-image-slice: 1;
+            margin: 10px 20px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            overflow: hidden;
+            letter-spacing: 2px;
+            transition: .8s cubic-bezier(.165, .84, .44, 1);
+        }
+
+            .sliding-button:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 0;
+                width: 100%;
+                z-index: -1;
+                color: white;
+                background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+                transition: .8s cubic-bezier(.165, .84, .44, 1);
+            }
+
+            .sliding-button:hover {
+                background: rgba(255, 255, 255, 0);
+            }
+
+                .sliding-button:hover:before {
+                    bottom: 0%;
+                    top: auto;
+                    height: 100%;
+                }
+    </style>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAnJycA////ADQ0NABNX4wAWnShAENMdQA7QWUAmsbtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dVEQB3dwARVVURAHd3ABFVVREid3ciEVVVESJ3dyIRVVVEVUR3d0RVVURVRHd3RFVVRFVERFVEVVVEVUREVURVZjNmMzNmM2ZmM2YzM2YzZmZVZlVVZlVmZlVmVVVmVWYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+</head>
+
+<body link="#c9f2ff" vlink="#c9f2ff" alink="#ff0000" bgcolor="black">
+
+    <div class="blurp">
+        <div class="header">
+            <!-- <div class="blur"><img style="width: 50%" src="standard.gif"></div> -->
+            <p class="bigtext"></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>AmazingAnimal</h1>
+        <hr>
+        <img src="a77bce08ed7ce4dde9c5b74d4d377b6b.png" height="200px" border="2px"> <img src="IMG_384821214324.jpg" height="200px" border="2px"> <img src="HappyNewYear.png" height="200px" border="2px"> <img src="Без названия (1).png" height="200px">
+        <hr>
+        <h3>Всем привет, меня зовут Егор - псевдоним AmazingAnimal</h3>
+        <h3>Вот некоторая информация про меня:</h3>
+        <h3>📅 Мне 15 лет - день рождения 27 марта </h3>
+        <h3>😆 Весьма веселый и харизматичный парень, ненавижу чебоксаров</h3>
+        <h3>💻 Программист на Python и C++, пишу дискорд ботов</h3>
+        <h3>🟩 Создатель таких прекрасных серверов по майнкрафту, как <a href="https://discord.gg/MH2eVuXCZX">AniMine</a> и <a href="https://discord.gg/yu6R7ZdYAN">SkeRich</a></h3>
+        <h3>🧹 Официальный представитель клана Горничных<img src="5GJ1.gif" height="50px"></h3>
+        <h3></h3>
+        <h3></h3>
+        <a href="https://discord.gg/yu6R7ZdYAN" class="sliding-button"><img src="discord.png" height="20px"> Discord</a> <a href="https://www.instagram.com/_the_amazing_animal_/" class="sliding-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" height="20px"> Instagram</a> <a href="https://www.twitch.tv/theamazinganimal" class="sliding-button"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c540.png" height="20px"> Twitch</a>
+        <a href="https://www.youtube.com/channel/UCXJrcJ000ZSFwvYOUYn4Pqg" class="sliding-button"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" height="20px"> YouTube</a>
+
+        <script>var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }</script>
+
+
+    </div>
+</body>
+</html>
